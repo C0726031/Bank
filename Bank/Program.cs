@@ -10,6 +10,8 @@ namespace Bank
     {
         static void Main(string[] args)
         {
+            int i = 7;
+            int j = 7;
         }
     }
 }
