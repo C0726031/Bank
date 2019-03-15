@@ -8,10 +8,25 @@ namespace Bank
 {
     class Program
     {
+        private double m_balance;
+
         static void Main(string[] args)
         {
-            int i = 7;
-            int j = 7;
+
         }
+        public void Debit(double amount)
+        {
+            if(amount> m_balance)
+            {
+                throw new ArgumentOutOfRangeException("amount");
+            }
+            if(amount<0)
+            {
+                throw new ArgumentOutOfRangeException("amount");
+            }
+            m_balance += amount;
+        }
+
+          
     }
 }
